@@ -6,3 +6,5 @@ command = "npm run dev"
 
 [template.environment]
 OPENAI_API_KEY = "your OpenAI API key"
+PINECONE_API_KEY = "your Pinecone API key"
+PINECONE_ENVIRONMENT = "your Pinecone environment"

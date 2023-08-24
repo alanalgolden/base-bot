@@ -4,6 +4,7 @@ import { useChat } from "../hooks/use-chat";
 import { ChatMessage } from "../components/ChatMessage";
 import { appConfig } from "../../config.browser";
 import { Welcome } from "../components/Welcome";
+import { pineconeClient } from "../pinecone-client";
 
 export default function Index() {
   // The content of the box where the user is typing
@@ -44,6 +45,7 @@ export default function Index() {
 
   return (
     <App title="Base Bot">
+      <button onClick={() => console.log(pineconeClient)}>Test Button</button>
       <main className="bg-white md:rounded-lg md:shadow-md p-6 w-full h-full flex flex-col">
         <section className="overflow-y-auto flex-grow mb-4 pb-8">
           <div className="flex flex-col space-y-4">

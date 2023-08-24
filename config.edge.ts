@@ -3,9 +3,12 @@ import type { AppConfig } from "./lib/edge/types.ts";
 import { prompt } from "./prompts/basic-prompt.ts";
 
 export const appConfig: AppConfig = {
-  // This should be set in an environment variable
+  // # ENVIRONMENT VARIABLES
+  // These should be set as environment variable
   // See https://platform.openai.com/account/api-keys
   OPENAI_API_KEY: Deno.env.get("OPENAI_API_KEY") ?? "",
+  /*   PINECONE_API_KEY: Deno.env.get("PINECONE_API_KEY") ?? "",
+  PINECONE_ENVIRONMENT: Deno.env.get("PINECONE_environment_KEY") ?? "", */
 
   // The maximum number of message in the history to send to the API
   // You should also set this in the config.browser.ts file.

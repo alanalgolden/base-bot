@@ -10,6 +10,10 @@ export interface AppConfig {
   // See https://platform.openai.com/account/api-keys
   OPENAI_API_KEY: string;
 
+  // See https://app.pinecone.io
+  PINECONE_API_KEY: string;
+  PINECONE_ENVIRONMENT: string;
+
   // This is where the magic happens. See the README for details
   systemPrompt:
     | string
